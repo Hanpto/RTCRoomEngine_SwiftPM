@@ -9,8 +9,8 @@ let package = Package(
                  targets: ["RTCRoomEngineBinary", "RTCRoomEngineDeps"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Hanpto/TXIMSDK_Plus_SwiftPM.git", from: "9.0.7667"),
-        .package(url: "https://github.com/Hanpto/TRTC_Professional_SwiftPM.git", from: "13.5.21355")
+        .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM.git", from: "9.0.7652"),
+        .package(url: "https://github.com/Tencent-RTC/Professional_SwiftPM.git", from: "13.3.20845")
     ],
     targets: [
         .binaryTarget(
@@ -21,8 +21,8 @@ let package = Package(
         .target(
             name: "RTCRoomEngineDeps",
             dependencies: [
-                .product(name: "TXIMSDK_Plus", package: "TXIMSDK_Plus_SwiftPM"),
-                .product(name: "TRTC_Professional", package: "TRTC_Professional_SwiftPM")
+                .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM"),
+                .product(name: "Professional_SwiftPM", package: "Professional_SwiftPM")
             ],
             path: "Sources/Deps",
             linkerSettings: [
