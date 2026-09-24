@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RTCRoomEngineBinary",
-            url: "https://ios-sdk-release-1300962221.cos.ap-guangzhou.myqcloud.com/ios/RTCRoomEngine/4.3.1/RTCRoomEngine.xcframework.zip",
-            checksum: "c4d3581c8a5757c0e45206e7ffeaf1a0c92bfaf8824de0774da1084d58df55bc"
+            url: "https://ios-sdk-release-1300962221.cos.ap-guangzhou.myqcloud.com/ios/RTCRoomEngine/4.3.0/RTCRoomEngine.xcframework.zip",
+            checksum: "a5b90331706c438762cdcd38d6a292c18932dc3c7ea9ca5e284418d72dbe38eb"
         ),
         .target(
             name: "RTCRoomEngineDeps",
